@@ -1,0 +1,166 @@
+.ck {
+  height: 200px;
+}
+
+// ckeditor: Placeholder
+.ck.ck-editor__editable > .ck-placeholder::before {
+  color: lightgrey;
+  font-family: Georgia;
+}
+
+// CKEDITOR: Font
+.ck-content .text-tiny {
+  font-size: 0.7em;
+}
+
+.ck-content .text-small {
+  font-size: 0.85em;
+}
+
+.ck-content .text-big {
+  font-size: 1.4em;
+}
+
+.ck-content .text-huge {
+  font-size: 1.8em;
+}
+
+/////////////////////////////////////////////////////////
+
+body {
+  font-size: 0.9rem;
+}
+
+.page-wrapper.toggled .sidebar {
+  left: -300px;
+}
+
+// angular perfect scrollbar style
+.sidebar .ps.ps--scrolling-y > .ps__rail-y,
+.sidebar > .ps.ps--scrolling-x > .ps__rail-x,
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: transparent !important;
+}
+
+.sidebar .ps.ps--active-y > .ps__rail-y:hover,
+.sidebar > .ps.ps--active-y > .ps__rail-y.ps--clicking {
+  width: 10px !important;
+}
+
+.ps__thumb-y {
+  background-color: #fff !important;
+  width: 6px !important;
+  border-radius: 0px !important;
+  opacity: 0.5;
+}
+
+figure img {
+  max-width: 90%;
+}
+
+// Custome Margins
+.ml-5p {
+  margin-left: 5%;
+}
+
+.ml-10p {
+  margin-left: 10%;
+}
+
+.mr-5p {
+  margin-right: 5%;
+}
+
+//////////////// MathJAX CSS ////////////////////////////////
+.wrs_multipleRowPanel {
+  background-color: white;
+}
+
+.wrs_modal_title {
+  // background-color: grey;
+  background-color: #000;
+}
+
+.wrs_editor .wrs_panelContainer {
+  background: none !important;
+}
+
+// .wrs_modal_buttons_container > button {
+//   background-color: grey;
+// }
+
+.wrs_editor .wrs_toolbar .wrs_header > div.wrs_selected,
+.wrs_editor .wrs_toolbar .wrs_header > button.wrs_selected {
+  // background: #f2f3f5 url(decoration/selected_tab_background.png?v=7.14.10.1d2c70) top left no-repeat;
+  background: #f8f9fa !important;
+  border: 1px solid #778e9a;
+  border-bottom: none;
+  // height: 25px;
+  width: 70px !important;
+  height: 40px !important;
+  color: #000;
+  *padding-top: 3px;
+  *height: 21px;
+  cursor: pointer !important;
+}
+
+.wrs_editor .wrs_toolbar .wrs_header > button,
+.wrs_editor .wrs_toolbar .wrs_header > div {
+  // background: #556e7b url(decoration/tab_background.png?v=7.14.10.1d2c70) top left no-repeat;
+  // background: grey !important;
+  background: #000 !important;
+  border-bottom: 1px solid #778e9a;
+  cursor: default;
+  // height: 22px;
+  // width: 44px;
+  width: 70px !important;
+  height: 40px !important;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  cursor: pointer !important;
+}
+
+.wrs_editor .wrs_toolbar .wrs_header > button:hover,
+.wrs_editor .wrs_toolbar .wrs_header > div:hover {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+  cursor: pointer !important;
+}
+
+.wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  width: 725px !important;
+}
+
+.wrs_modal_dialogContainer.wrs_modal_desktop {
+  font-size: 20px;
+}
+
+.wrs_editor.wrs_withHand:not(.wrs_handDisabled):not(.wrs_toolbarHidden) .wrs_handWrapper > input {
+  width: 28px;
+  border: 1px solid #000;
+  // background: #778e9a url(decoration/open_hand.svg) center center no-repeat;
+  background-color: #000 !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.wrs_modal_button_accept,
+.wrs_modal_button_accept:active,
+.wrs_modal_button_accept:focus,
+.wrs_modal_button_accept:hover,
+.wrs_modal_button_accept:visited {
+  background-color: grey !important;
+}
