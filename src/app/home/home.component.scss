@@ -9,4 +9,35 @@
   .smoky-white-txt {
     color: whitesmoke;
   }
+
+  .extra-letter-space {
+    letter-spacing: 3px;
+  }
+
+  .skill-icon {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: lavender;
+    padding: 8%;
+  }
+
+  .external-link-icon {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .fa {
+    color: white;
+    width: 20px;
+  }
+
+  .checked {
+    color: orange;
+  }
 }
