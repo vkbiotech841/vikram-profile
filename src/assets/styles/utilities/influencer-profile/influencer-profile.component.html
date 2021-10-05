@@ -1,0 +1,439 @@
+<div class="profile-card">
+	<div class="d-flex" (click)="navigateToDiscovery()">
+		<div>
+			<span class="material-icons back-btn">
+				arrow_back_ios_new
+			</span>
+		</div>
+		<div class="ml-1p back-btn">Back to Discovery</div>
+	</div>
+	<div class="d-flex justify-content-evenly mt-1p w-90p">
+		<div class="d-flex justify-content-between" style="margin-left: -6%;">
+			<div class="profile-image">
+				<img src="" onError="this.src='http://www.gravatar.com/avatar/?d=mp'" />
+			</div>
+
+			<div class="d-flex flex-column align-item-center">
+				<div>
+					<font05>Justin Bieber</font05>
+				</div>
+				<div>
+					<font08-5>Musical Artist</font08-5>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-item-center">
+			<div>
+				<font05>USA</font05>
+			</div>
+			<div>
+				<font08-5>Location</font08-5>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-item-center">
+			<div>
+				<font05>Male</font05>
+			</div>
+			<div>
+				<font08-5>Gender</font08-5>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-item-center">
+			<div>
+				<font05>350M</font05>
+			</div>
+			<div>
+				<font08-5>Audience</font08-5>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-item-center">
+			<div>
+				<font05>15%</font05>
+			</div>
+			<div>
+				<font08-5>Engagement rate</font08-5>
+			</div>
+		</div>
+
+		<div class="d-flex flex-column align-item-center mr-15p" style="border-left: 1px solid #d9d9d9; height: 70px;">
+			<div>
+				&nbsp;
+			</div>
+		</div>
+
+		<div class="d-flex align-item-center" style="margin-left: -12%; margin-top: -5%;">
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/facebook.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/instagram.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/youtube.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/tiktok.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/snapchat.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+
+			<div class="d-flex flex-column align-item-center mr-15p">
+				<div>
+					<img src="assets/images/social-media-logo/twitter.svg" alt="" class="w-18px" />
+				</div>
+				<div>
+					<font08-5>80M</font08-5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mat-menu-trigger action-button">
+		<mat-icon>more_horiz</mat-icon>
+	</div>
+
+	<div class="filter-btn-container mt-n1p">
+		<div class="w-100p d-flex justify-content-center">
+			<button (click)="toogleAllPlatformsFilter()" [ngClass]="{ active: isAllPlatformsFilterSelected }" class="search-btn">
+				<div class="d-flex align-item-center justify-content-center">
+					<div class="btn-text">All Platforms</div>
+				</div>
+			</button>
+
+			<button (click)="toogleInstagramFilter()" [ngClass]="{ active: isInstragramFilterSelected }" class="search-btn">
+				<div class="d-flex align-item-center justify-content-center">
+					<div>
+						<img src="assets/images/social-media-logo/instagram_outline_icon.svg" alt="" class="w-13px mr-5px" />
+					</div>
+					<div class="btn-text">Instagram</div>
+				</div>
+			</button>
+
+			<button (click)="toogleYoutubeFilter()" [ngClass]="{ active: isYoutubeFilterSelected }" class="search-btn">
+				<div class="d-flex align-item-center justify-content-center">
+					<div>
+						<img src="assets/images/social-media-logo/youtube_outline_icon.svg" alt="" class="w-13px mr-5px" />
+					</div>
+					<div class="btn-text">YouTube</div>
+				</div>
+			</button>
+
+			<button (click)="toogleTiktokFilter()" [ngClass]="{ active: isTikTokFilterSelected }" class="search-btn">
+				<div class="d-flex align-item-center justify-content-center">
+					<div>
+						<img src="assets/images/social-media-logo/tiktok_outline_icon.svg" alt="" class="w-13px mr-5px" />
+					</div>
+					<div class="btn-text">Tiktok</div>
+				</div>
+			</button>
+
+			<btn07 (click)="resetFilters()">Clear all filters</btn07>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container-fluid">
+		<div class="profile-details mt-1p">
+			<div class="d-flex justify-content-evenly w-100p">
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>130M</font05>
+					</div>
+					<div>
+						<font08-5>Total audience</font08-5>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>220</font05>
+					</div>
+					<div>
+						<font08-5>Post collected</font08-5>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>800K</font05>
+					</div>
+					<div>
+						<font08-5>Average engagements</font08-5>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>18%</font05>
+					</div>
+					<div>
+						<font08-5>Engagement rate</font08-5>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>1.3M</font05>
+					</div>
+					<div>
+						<font08-5>Average likes</font08-5>
+					</div>
+				</div>
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>540K</font05>
+					</div>
+					<div>
+						<font08-5>Average comments</font08-5>
+					</div>
+				</div>
+
+				<div class="d-flex flex-column align-item-center">
+					<div>
+						<font05>200K</font05>
+					</div>
+					<div>
+						<font08-5>Average views</font08-5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-text text-align-center mt-2p mb-2p d-flex justify-content-center">
+			<div class="mr-1p">Core Metrices</div>
+			<div>
+				<info-tooltip [position]="'top'" [title]="'This is the core metrices for the influencer.'"></info-tooltip>
+			</div>
+		</div>
+
+		<div class="profile-analysis mt-1p">
+			<div class="text-align-center">
+				<mat-tab-group>
+					<mat-tab label="Average Likes">
+						<div>
+							<graph01-echart
+								[height]="graphHeight"
+								[width]="1800"
+								[graphData]="lineChart"
+								[graphTitle]="'Earned media value vs Time'"
+								[yAxisLabel]="'EMV ($)'"
+								[xAxisLabel]="'Date'"
+							></graph01-echart>
+						</div>
+					</mat-tab>
+					<mat-tab label="Average Engagements">
+						<div>
+							<graph01-echart
+								[height]="graphHeight"
+								[width]="1800"
+								[graphData]="lineChart"
+								[graphTitle]="'Earned media value vs Time'"
+								[yAxisLabel]="'EMV ($)'"
+								[xAxisLabel]="'Date'"
+							></graph01-echart>
+						</div>
+					</mat-tab>
+					<mat-tab label="Average Comments">
+						<div>
+							<graph01-echart
+								[height]="graphHeight"
+								[width]="graphWidthLarge"
+								[graphData]="lineChart"
+								[graphTitle]="'Earned media value vs Time'"
+								[yAxisLabel]="'EMV ($)'"
+								[xAxisLabel]="'Date'"
+							></graph01-echart>
+						</div>
+					</mat-tab>
+				</mat-tab-group>
+			</div>
+		</div>
+
+		<div class="mt-1p d-flex flex-wrap justify-content-between">
+			<div class="">
+				<graph01-echart
+					[height]="graphHeight"
+					[width]="graphWidthMedium"
+					[graphData]="lineChart"
+					[graphTitle]="'Impresssions vs Time'"
+					[yAxisLabel]="'Impressions'"
+					[xAxisLabel]="'Date (Time)'"
+				></graph01-echart>
+				<div class="walkthrough-overlay"></div>
+			</div>
+			<div class="">
+				<graph01-echart
+					[height]="graphHeight"
+					[width]="graphWidthMedium"
+					[graphData]="lineChart"
+					[graphTitle]="'Likes vs Time'"
+					[yAxisLabel]="'Likes'"
+					[xAxisLabel]="'Date (Time)'"
+				></graph01-echart>
+			</div>
+		</div>
+
+		<div class="profile-details mt-1p">
+			<div class="section-text text-align-center mb-1p d-flex justify-content-center">
+				<div class="mr-1p">Popular Hashtags</div>
+				<div>
+					<info-tooltip [position]="'top'" [title]="'Thes are most popular Hashtags for the influencer.'"></info-tooltip>
+				</div>
+			</div>
+			<div class="d-flex justify-content-evenly w-100p">
+				<div>
+					<font08-5>#fashion</font08-5>
+				</div>
+				<div>
+					<font08-5>#ootd</font08-5>
+				</div>
+				<div>
+					<font08-5>#clothing</font08-5>
+				</div>
+				<div>
+					<font08-5>#sponsored</font08-5>
+				</div>
+				<div>
+					<font08-5>#influencer</font08-5>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-text text-align-center mt-2p mb-2p d-flex justify-content-center">
+			<div class="mr-1p">Audience Demographics</div>
+			<div>
+				<info-tooltip [position]="'top'" [title]="'This is the Audience demographics for the influencer.'"></info-tooltip>
+			</div>
+		</div>
+
+		<div class="d-flex flex-wrap justify-content-between mb-1p">
+			<div class="">
+				<graph04-echart
+					[height]="graphHeight"
+					[width]="graphWidthSmall"
+					[graphData]="pieChart"
+					[legendValue]="true"
+					[graphTitle]="'Percentage vs Gender'"
+				></graph04-echart>
+			</div>
+
+			<div class="ml-1p">
+				<graph04-echart
+					[height]="graphHeight"
+					[width]="graphWidthSmall"
+					[graphData]="pieChart"
+					[legendValue]="true"
+					[graphTitle]="'Percentage vs Gender'"
+				></graph04-echart>
+			</div>
+
+			<div class="ml-1p">
+				<graph02-echart
+					[height]="graphHeight"
+					[width]="graphWidthSmall"
+					[graphData]="horizontalBarChart"
+					[graphTitle]="'Percentage vs Age'"
+					[yAxisLabel]="'Age Groups'"
+					[xAxisLabel]="'Percentage(%)'"
+				></graph02-echart>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-between">
+			<div class="w-48p">
+				<graph06-progressbar [graphData]="progressbarChart" [graphTitle]="'Location by Country'" [graphWidth]="100"></graph06-progressbar>
+			</div>
+			<div class="w-48p">
+				<graph06-progressbar [graphData]="progressbarChart" [graphTitle]="'Location by City'" [graphWidth]="100"></graph06-progressbar>
+			</div>
+		</div>
+
+		<div class="profile-analysis mt-1p mb-2p">
+			<div class="section-text text-align-center mt-2p mb-2p d-flex justify-content-center">
+				<div class="mr-1p">Posts</div>
+				<div>
+					<info-tooltip [position]="'top'" [title]="'This is the posts metrices for the influencer.'"></info-tooltip>
+				</div>
+			</div>
+
+			<div class="posts text-align-center">
+				<mat-tab-group>
+					<mat-tab label="Most Popular">
+						<ng-container *ngIf="posts.length > 0 && isSpinnerLoading; else noContent">
+							<div class="gallery-container">
+								<div *ngFor="let post of posts" class="overlay">
+									<img [src]="post.media_url" alt="" class="gallery-image card-dimensions image" *ngIf="post.media_url" />
+									<div class="overlay-content" *ngIf="post.media_url">
+										<div class="icons">
+											<div class="d-flex align-item-center">
+												<img src="assets/images/smi_reporting/post_heart_icon.svg" alt="" />
+												<span class="white mt-6p ml-5p">
+													<span *ngIf="post.likes < 1000">{{ post.likes }}</span>
+													<span *ngIf="post.likes >= 1000 && post.likes < 1000000">{{ post.likes / 1000 }}k</span>
+													<span *ngIf="post.likes >= 1000000">{{ post.likes / 1000000 }}M</span>
+												</span>
+											</div>
+											<div class="d-flex align-item-center">
+												<img src="assets/images/smi_reporting/post_message_icon.svg" alt="" />
+												<span class="white ml-5p">
+													<span *ngIf="post.comments < 1000">
+														{{ post.comments }}
+													</span>
+													<span *ngIf="post.comments >= 1000 && post.comments < 1000000">{{ post.comments / 1000 }}k</span>
+													<span *ngIf="post.comments >= 1000000">{{ post.comments / 1000000 }}M</span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ng-container>
+
+						<ng-template #noContent>
+							<div class="mt-10p mb-20p text-align-center" *ngIf="posts.length === 0 && isSpinnerLoading">
+								<font01>There is no post yet!!!</font01>
+							</div>
+						</ng-template>
+
+						<div class="loading" *ngIf="!isSpinnerLoading">
+							<app-spinning-loader [rotating]="true"></app-spinning-loader>
+						</div>
+					</mat-tab>
+					<mat-tab label="Most Recent">
+						Tab 2
+					</mat-tab>
+				</mat-tab-group>
+			</div>
+		</div>
+	</div>
+</div>

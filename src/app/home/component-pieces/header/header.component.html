@@ -1,1 +1,25 @@
-<p>header works!</p>
+<div class="container">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">Vikram Kumar</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" *ngFor="let tab of navbarTabs; let i=index">
+                        <li class="nav-item">
+                            <a class="nav-link cursor-pointer" aria-current="page"
+                                [ngClass]="{'active': selectedTabIndex == i}" (click)="selectedTab(i)">{{tab |
+                                titlecase}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>

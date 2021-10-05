@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+
+@import "./assets/styles/utilities/fonts.scss";
+@import "./assets/styles/utilities/common.scss";
+@import "./assets/styles/variables/colors.scss";
+@import "./assets/styles/components/ck_editor.scss";
+@import "./assets/styles/components/theme.scss";
+@import "./assets/styles/utilities/margin-padding-custom.scss";
+@import "./assets/styles/utilities/width.scss";

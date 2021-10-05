@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public selectedTabIndex: any = 0;
+  public navbarTabs: string[] = [
+    "about",
+    "projects",
+    "resume",
+    "blogs",
+    "contact"
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public selectedTab(tabIndex: any): void {
+    this.selectedTabIndex = this.selectedTab;
   }
 
 }
